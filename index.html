@@ -1,18 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Universo Salchicha</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- style -->
-    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/poppins.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
 </head>
-<body>
 
+<body>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img style="width: 60px;" src="img/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-blanco" aria-current="page" href="#">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-blanco" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-blanco" href="#">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <div class="container">
+            <div class="banner-title poppins-light">
+                Volá lejos.
+            </div>
+            <div class="banner-text poppins-regular">
+                Contáctanos hoy y deja que el destino (y nosotros)<br>
+                te ayude a encontrar tu perro salchicha ideal
+            </div>
+        </div>
+    </div>
+    <section class="bg-estrellas">
+        <div class="container p-5 text-center">
+            <h3 class="text-white fs-1 poppins-medium my-5">Encuentra tu Dachshund ideal con Universo Salchicha</h3>
+
+            <p class="text-white fs-4">
+                En Universo Salchicha, sabemos que cada
+                persona es única... ¡y tu futuro compañero de
+                cuatro patas también lo es! Por eso, ofrecemos
+                un servicio exclusivo de búsqueda
+                personalizada, para que encuentres el
+                dachshund perfecto según tu estilo de vida,
+                gustos y necesidades.
+            </p>
+        </div>
+    </section>
+    <section class="bg-estrellas">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="text-white my-5 fs-1 text-start poppins-medium">Universo Salchicha sabe cómo llevar tu amor por los
+                        dachshunds a otro nivel..</h3>
+                    <div class="contenedor-lila text-white">
+                        <p><i class="fa-solid fa-square-check"></i>Servicio de busqueda de cachorros a tu medida.</p>
+                        <p><i class="fa-solid fa-square-check"></i>Accesorios personalizados para perros salchichas y
+                            sus dueños</p>
+                        <p><i class="fa-solid fa-square-check"></i>Servicio de asesoramiento para el cuidado del perro.
+                        </p>
+                        <p><i class="fa-solid fa-square-check"></i>Suscripción a una comunidad exclusiva con contenido
+                            sobre crianza y bienestar.</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img class="w-100" src="img/salchicha.png" alt="Perro">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-estrellas">
+        <div class="container p-5">
+            <h3 class="text-white text-center my-5 fs-1 poppins-medium">¿Cómo funciona el servicio?</h3>
+            <div class="contenedor-lila">
+                <ul class="text-white" style="opacity: 1;">
+                    <li>Contanos sobre vos - Completa un breve cuestionario sobre tu hogar, rutina y preferencias.</li>
+                    <li>Buscamos el cachorro ideal - Evaluamos temperamento, color, tamaño y energía
+                        para que encaje con vos.</li>
+                    <li>Entrega personalizada - Te guiamos en la transición para que tu nuevo amigo se
+                        adapte sin problemas.</li>
+                    <li>Asesoramiento continuo - Te acompañamos con consejos sobre alimentación,
+                        entrenamiento y cuidados.</li>
+                    <li>¿Buscas un salchicha juguetón y enérgico? ¿O preferis uno tranquilo y cariñoso?</li>
+                    <li>Nos encargamos de encontrar el compañero que se ajuste perfectamente a vos</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-morado p-5">
+        <div class="row">
+            <div class="col-2">
+                <img class="w-100" src="img/logouniverso.jpeg" alt="Perro Salchicha">
+            </div>
+            <div class="col-4">
+                <h5 class="text-white fs-5">SEGUINOS EN NUESTRAS REDES</h5>
+                <a class="redes color-instagram" href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a class="redes color-facebook" href="#" target="_blank"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+                <a class="redes color-youtube" href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="col-4">
+                <h5 class="text-white fs-5">COMUNICATE CON NOSOTROS</h5>
+                <p class="text-white"><i class="fa-solid fa-envelope"></i>&nbsp;hola@universosalchicha.com.ar</p>
+                <p class="text-white"><i class="fa-brands fa-whatsapp"></i>&nbsp;+54 9 3518 117116</p>
+            </div>
+            <div class="col-2">
+                <h5 class="text-white fs-5">¿DÓNDE ESTAMOS?</h5>
+                <p class="text-white">CÓRDOBA, ARGENTINA</p>
+            </div>
+        </div>
+    </footer>
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
