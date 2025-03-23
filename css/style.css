@@ -83,8 +83,28 @@
 /* btn */
 .round-button {
     border-radius: 60px;
+    color: var(--color-azul);
+    padding: 5px 50px;
+    background-color: white;
+}
+
+.round-button:hover {
+    background:none;
+    border: 3px solid white;
+    color: white;
+}
+
+.round-button-celeste {
+    border-radius: 60px;
     color: white;
     padding: 5px 50px;
+    background-color: var(--color-celeste);
+}
+
+.round-button-celeste:hover {
+    background:none;
+    border: 3px solid var(--color-celeste);;
+    color: var(--color-celeste);;
 }
 
 /* redes */
@@ -95,9 +115,8 @@
 
 /* contenedor */
 .contenedor-lila {
-    background-color: var(--color-lila);
+    background-color: rgba(194, 145, 242, 0.3);   
     border-radius: 60px;
-    opacity: 0.2;
     padding: 30px;
 }
 
@@ -150,4 +169,32 @@
 
 .link-blanco:hover {
     color: var(--color-naranja);
+}
+
+/* formulario */
+
+.formulario input {
+    width: 100%;
+    margin-top: 10px;
+    background-color: var(--color-morado);
+    color: white;
+    border: none;
+    border-radius: 60px;
+    padding: 5px 20px;
+}
+
+.formulario textarea {
+    width: 100%;
+    margin-top: 10px;
+    resize: none;
+    background-color: var(--color-morado);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.formulario input:focus, .formulario textarea:focus {
+    outline: none;
+    border: 2px solid var(--color-celeste)
 }
