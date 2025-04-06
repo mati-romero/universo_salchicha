@@ -88,7 +88,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-estrellas3">
+    <section class="bg-estrellas4">
         <div class="container py-5 px-1 p-lg-5">
             <h3 class="text-white text-center my-5 fs-1 poppins-medium">¿Cómo funciona el servicio?</h3>
             <div class="contenedor-lila">
@@ -152,10 +152,10 @@
                     <h3 class="text-white text-start my-5 fs-3 poppins-medium">¿LISTO PARA ENCONTRAR A TU DACHSHUND IDEAL?</h3>
                     <p class="fs-6 text-white poppins-light text-start">Escríbenos hoy y te ayudaremos a encontrar el compañero perfecto para ti.</p>
                     <p class="fs-6 text-white poppins-light text-start">¡Te estamos esperando!</p>
-                    <form class="formulario" action="">
-                        <input class="poppins-light" type="text" name="" id="" placeholder="Tu Nombre">
-                        <input class="poppins-light" type="text" name="" id="" placeholder="Tu E-mail o Telefono">
-                        <textarea class="poppins-light" name="" id="" rows="6" placeholder="Tu Mensaje"></textarea>
+                    <form class="formulario" action="" id="contacto-form">
+                        <input class="poppins-light" type="text" name="nombre" id="" placeholder="Tu Nombre" required>
+                        <input class="poppins-light" type="text" name="email" id="" placeholder="Tu E-mail o Telefono" required>
+                        <textarea class="poppins-light" name="mensaje" id="" rows="6" placeholder="Tu Mensaje"></textarea>
 
                         <div class="text-center d-lg-none mt-3">
                             <button type="button" class="btn round-button-celeste-lg text-uppercase poppins-semibold">Enviar</button>
@@ -196,6 +196,27 @@
     </footer>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <script>
+        document.getElementById("contacto-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(this);
+
+        fetch("php/enviar.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            Swal.fire({
+            icon: data.includes("exito") ? "success" : "error",
+            title: data.includes("exito") ? "¡Mensaje enviado!" : "Error",
+            text: data
+            });
+        });
+        });
+</script>
+</body>
 </html>
