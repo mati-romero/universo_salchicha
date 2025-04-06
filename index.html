@@ -147,12 +147,12 @@
     </section> -->
     <section id="contacto" class="bg-azul">
         <div class="container p-5">
-            <div class="row align-items-end">
+            <form class="row align-items-end" id="contacto-form">
                 <div class="col-12 col-lg-8">
                     <h3 class="text-white text-start my-5 fs-3 poppins-medium">¿LISTO PARA ENCONTRAR A TU DACHSHUND IDEAL?</h3>
                     <p class="fs-6 text-white poppins-light text-start">Escríbenos hoy y te ayudaremos a encontrar el compañero perfecto para ti.</p>
                     <p class="fs-6 text-white poppins-light text-start">¡Te estamos esperando!</p>
-                    <form class="formulario" action="" id="contacto-form">
+                    <div class="formulario">
                         <input class="poppins-light" type="text" name="nombre" id="" placeholder="Tu Nombre" required>
                         <input class="poppins-light" type="text" name="email" id="" placeholder="Tu E-mail o Telefono" required>
                         <textarea class="poppins-light" name="mensaje" id="" rows="6" placeholder="Tu Mensaje"></textarea>
@@ -160,15 +160,15 @@
                         <div class="text-center d-lg-none mt-3">
                             <button type="button" class="btn round-button-celeste-lg text-uppercase poppins-semibold">Enviar</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <div class="col-4 d-none d-lg-block">
                     <img class="w-100" src="img/b.png" alt="Astronauta con computadora">
                     <div class="text-center">
-                        <button type="button" class="btn round-button-celeste text-uppercase poppins-semibold">Enviar</button>
+                        <button type="submit" class="btn round-button-celeste text-uppercase poppins-semibold">Enviar</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     <footer id="footer" class="bg-morado p-5">
