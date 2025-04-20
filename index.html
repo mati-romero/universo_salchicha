@@ -153,9 +153,9 @@
                     <p class="fs-6 text-white poppins-light text-start">Escríbenos hoy y te ayudaremos a encontrar el compañero perfecto para ti.</p>
                     <p class="fs-6 text-white poppins-light text-start">¡Te estamos esperando!</p>
                     <div class="formulario">
-                        <input class="poppins-light" type="text" name="nombre" id="" placeholder="Tu Nombre" required>
-                        <input class="poppins-light" type="text" name="email" id="" placeholder="Tu E-mail o Telefono" required>
-                        <textarea class="poppins-light" name="mensaje" id="" rows="6" placeholder="Tu Mensaje"></textarea>
+                        <input class="poppins-light" type="text" name="nombre" id="p_nombre" placeholder="Tu Nombre" required>
+                        <input class="poppins-light" type="text" name="email" id="p_email" placeholder="Tu E-mail o Telefono" required>
+                        <textarea class="poppins-light" name="mensaje" id="p_mensaje" rows="6" placeholder="Tu Mensaje"></textarea>
 
                         <div class="text-center d-lg-none mt-3">
                             <button type="button" class="btn round-button-celeste-lg text-uppercase poppins-semibold">Enviar</button>
@@ -210,11 +210,20 @@
         })
         .then(response => response.text())
         .then(data => {
+            
+            let iconS = data.includes("S") ? "success" : "error";
+            let titleS = data.includes("S") ? "¡Mensaje enviado!" : "Error";
+            let textS = data.includes("S") ? "Mensaje enviado con éxito" : "Hubo un error al enviar el mensaje.";
+            
             Swal.fire({
-            icon: data.includes("exito") ? "success" : "error",
-            title: data.includes("exito") ? "¡Mensaje enviado!" : "Error",
-            text: data
+                icon: iconS,
+                title: titleS,
+                text: textS,
             });
+            
+            $('#p_nombre').val('');
+            $('#p_email').val('');
+            $('#p_mensaje').val('');
         });
         });
 </script>
